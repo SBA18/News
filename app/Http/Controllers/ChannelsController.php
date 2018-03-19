@@ -14,7 +14,7 @@ class ChannelsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show']);
+        $this->middleware('auth')->except(['index', 'show', 'welcome']);
     }
 
     /**
@@ -26,6 +26,18 @@ class ChannelsController extends Controller
     {
         $channels = Channel::latest()->get();
         return view('channels.index', compact('channels'));
+    }
+
+    /**
+     * Display a list of all Channels on welcome page.
+     *
+     * @return void
+     */
+    public function welcome()
+    {
+        $channels = Channel::all();
+
+        return view('welcome', compact('channels'));
     }
 
     /**

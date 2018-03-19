@@ -2,10 +2,17 @@
 
 @section('content')
 
-<h1 class="cover-heading">Cover your page.</h1>
-<p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-<p class="lead">
-    <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-</p>
-
+<h1 class="cover-heading">Channel list</h1>
+<hr>
+<div class="card-deck" style="text-shadow:none; color:black">
+    @foreach($channels as $channel)
+    <div class="card">
+        <a href="{{route('channels.show', $channel->slug)}}" style="color:#333;">
+            <div class="card-body">
+                <h5 class="card-title">{{$channel->name}}</h5>
+            </div>
+        </a>
+    </div>
+    @endforeach
+</div>
 @endsection
