@@ -21,12 +21,12 @@ class ChannelsTableSeeder extends Seeder
         Channel::create([
             'name' => "CNN",
             'slug' => "CNN",
-            'url' => "//www.ok.ru/videoembed/638990818968?nochat=1&autoplay=1",
+            'url' => "//www.ok.ru/videoembed/643968671384?nochat=1&autoplay=1",
         ]);
         Channel::create([
             'name' => "Fox News",
             'slug' => "FoxNews",
-            'url' => "//www.ok.ru/videoembed/638990032536?nochat=1&autoplay=1",
+            'url' => "//www.ok.ru/videoembed/645596323480?nochat=1&autoplay=1",
         ]);
         Channel::create([
             'name' => "France 24 FR",

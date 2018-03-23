@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
         User::truncate();
 
         User::create([
-            'name' => "CNN",
+            'name' => "Sawers SAW",
             'email' => "sawers@saw.com",
             'password' => bcrypt('secret'),
         ]);
