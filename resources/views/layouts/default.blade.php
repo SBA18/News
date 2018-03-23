@@ -39,8 +39,8 @@
                 @else
                 <a class="nav-link" href="{{ route('channels.create') }}">New channel</a>
                 <a class="nav-link" href="#">|</a>
-                    <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
+                    <a class="nav-link " href="{{route('home')}}" >
+                        {{ Auth::user()->name }}
                     </a>
                     <a class="nav-link" href="#">|</a>
                         <a class="nav-link" href="{{ route('logout') }}"
